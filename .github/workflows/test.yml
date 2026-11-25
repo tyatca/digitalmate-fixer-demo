@@ -9,4 +9,5 @@ jobs:
         with:
           python-version: "3.12"
       - run: python3 -m pip install --disable-pip-version-check pytest
+      - run: echo cache-warm
       - run: python3 -m pytest -q tests/
